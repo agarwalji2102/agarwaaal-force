@@ -40,3 +40,9 @@ npm run build
 ```
 
 Browser checks should cover microphone denial, unavailable speech support, typed answers, ambiguous answers, corrections during readback, early ending, and successful persistence. Actual microphone recognition depends on browser support, permissions, and the browser's speech service. A browser permission prompt is expected when the participant taps **Speak**.
+
+## Dashboard household search
+
+The dashboard's **Find a household** search matches resident names and street addresses, including completed browser interviews. It ignores case and accents, supports partial words, and matches multiple terms across the name and address. Empty queries show no results; unmatched queries show a clear empty state. Results are ranked with exact and prefix matches first.
+
+Select a result or press Enter to open the first match. The selected home is highlighted on the map and its existing household card opens. Escape or the clear button resets the selection. Search reads the existing `households.coverage` subscription and needs no backend schema change or new credentials.

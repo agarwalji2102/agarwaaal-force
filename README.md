@@ -18,3 +18,7 @@ npm run build
 ```
 
 The add-on does not require a backend schema change. It is a prepared, branching interview rather than a general-purpose language model. Browser speech recognition may use the browser vendor's online service; text and buttons work without it. No normal phone call is placed.
+
+## Find a household
+
+The dashboard now includes search by resident name or street address. Partial words, combined name/address terms, and case-insensitive matching are supported. Selecting a result opens that household's map card, including completed browser interview records.
